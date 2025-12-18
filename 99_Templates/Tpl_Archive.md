@@ -5,51 +5,49 @@ tags: [archive, postmortem]
 origin: inbox | incubator | project
 ---
 
-# Archive — {{title}}
+# Archive layer — {{title}}
 
-## 🔗 Origine
-- Initial idea : [[lien-vers-l-idee]]
-- Dernier état : [[lien-concept-ou-projet]]
+> This is closure. Be honest and brief so your brain can let it go.
 
----
+## 1) What ended (minimal pointers)
+<!-- Don’t rewrite the story. Just enough to locate context later. -->
+- First note link (optional):
+- Last active state:
+  - [ ] Inbox
+  - [ ] Incubator
+  - [ ] Project
 
-## 🛑 Pourquoi cette idée est archivée
-*(Choisir la vraie raison, pas la plus confortable)*
+## 2) The honest reason it ended
+<!-- Choose the true reason, not the polite one. Lying here keeps the loop alive. -->
+- [ ] Lost interest over time
+- [ ] Too much effort for the value
+- [ ] Already exists / better solved elsewhere
+- [ ] Bad timing / priorities changed
+- [ ] Technical constraints were too heavy
+- [ ] I learned what I wanted; no need to ship
+- [ ] I was avoiding something else (procrastination project)
+- [ ] Other:
 
-- [ ] Manque d’intérêt dans le temps
-- [ ] Trop complexe pour la valeur apportée
-- [ ] Déjà existant / mieux fait ailleurs
-- [ ] Mauvais timing
-- [ ] Contraintes techniques trop fortes
-- [ ] Autre :
-
----
-
-## 🚩 Signaux d’alerte ignorés (si applicable)
+## 3) The signal I ignored
+<!-- One or two bullets. This is the pattern you want to catch earlier next time. -->
 - 
 - 
 
----
-
-## 🧠 Ce que j’ai appris
-- Technique :
-- Produit / concept :
-- Personnel :
-
----
-
-## 🔁 Ce que je referais différemment
--
-
----
-
-## 🌱 Ce que je garde pour plus tard
-*(Idées, patterns, concepts réutilisables)*
-
+## 4) What I’m keeping
+<!-- Reusable bits: code, names, insights, prompts, links. -->
 - 
 
----
+## 5) What I learned (one line each)
+- Technical:
+  - 
+- Product / concept:
+  - 
+- Personal:
+  - 
 
-## 📌 Verdict final
-En une phrase :
-> *Pourquoi cette idée devait mourir.*
+## 6) If I ever restart, I should start by...
+<!-- A single next action: read X, build Y, talk to Z, etc. -->
+- 
+
+## 7) Final verdict (one sentence)
+>

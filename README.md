@@ -208,16 +208,14 @@ Enable the following core plugin:
 * `Alt + T` → Insert Template
 * `Alt + M` → Move file to another folder
 
-### 5. Git Sync Script
+### 5. Git sync (cross-platform)
 
-Make the script executable:
+To keep Brain-OS portable across desktop and mobile, prefer **Obsidian-compatible Git sync**.
 
-```bash
-chmod +x sync.sh
-```
+* **Desktop:** Obsidian Git plugin
+* **Mobile:** any Git-based Obsidian-compatible workflow you already trust
 
-Run it anytime to snapshot and save your brain state:
+References:
 
-```bash
-./sync.sh
-```
+* Obsidian community plugins: https://obsidian.md/plugins
+* Obsidian Git plugin (community): https://github.com/denolehov/obsidian-git
