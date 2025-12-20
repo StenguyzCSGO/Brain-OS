@@ -174,9 +174,13 @@ Only **Git** and **Obsidian** are needed.
 
 ### 1. Initialize your Repository
 
-Brain-OS allows two installation methods depending on your needs.
+**Which method should I choose?**
+* [**Method A (Template)**](#method-a): Easiest. Use this if you want a simple, private vault and don't care about syncing future Brain-OS updates.
+* [**Method B (Mirror)**](#method-b): Advanced. Use this only if you are comfortable with Git and want to merge future updates (new templates, structure changes) into your private vault.
 
-#### Option A: The "Standard User" (Recommended)
+---
+
+#### <a id="method-a"></a>🟢 Method A: The "Template" (Recommended)
 *Best if you want a clean start and don't plan to sync structural updates often.*
 
 1. Click the **"Use this template"** button at the top of this page.
@@ -186,7 +190,7 @@ Brain-OS allows two installation methods depending on your needs.
 
 ---
 
-#### ⚠️ Option B: The "Power User" (Advanced)
+#### <a id="method-b"></a>🟠 Method B: The "Mirror" (Advanced Users Only)
 *Best if you want to keep your data private but strictly follow Brain-OS updates via Git (Shared History).*
 
 Since GitHub does not reliably support private forks of public repositories in all contexts,
@@ -219,11 +223,13 @@ the recommended approach is to use the **Mirroring method**.
     git remote set-url --push upstream DISABLE
     ```
 
-    When new features or templates are released, simply run:
-    ```bash
-    git pull upstream main
-    git push origin main
-    ```
+
+> **How to update later:**
+> When new features or templates are released, simply run:
+> ```bash
+> git pull upstream main
+> git push origin main
+> ```
 
 ### 2. Open as an Obsidian Vault
 
