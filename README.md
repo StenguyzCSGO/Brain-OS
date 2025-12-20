@@ -172,18 +172,64 @@ with a short post-mortem.
 Brain-OS is fully local and requires **no backend**.
 Only **Git** and **Obsidian** are needed.
 
-### 1. Clone the repository
+### 1. Initialize your Repository
 
-```bash
-git clone git@github.com:YOUR_USERNAME/Brain-OS.git
-cd Brain-OS
-```
+Brain-OS allows two installation methods depending on your needs.
+
+#### Option A: The "Standard User" (Recommended)
+*Best if you want a clean start and don't plan to sync structural updates often.*
+
+1. Click the **"Use this template"** button at the top of this page.
+2. Select **"Create a new repository"**.
+3. Set it to **Private** and name it (e.g., `My-Brain-OS`).
+4. Clone your new repository to your computer.
+
+---
+
+#### ⚠️ Option B: The "Power User" (Advanced)
+*Best if you want to keep your data private but strictly follow Brain-OS updates via Git (Shared History).*
+
+Since GitHub does not reliably support private forks of public repositories in all contexts,
+the recommended approach is to use the **Mirroring method**.
+
+1. **Create a blank private repository** on GitHub (do not initialize with README).
+2. Open your terminal and run the following commands to duplicate the Brain-OS history:
+
+    ```bash
+    # 1. Download a bare copy of the public Brain-OS
+    git clone --bare https://github.com/StenguyzCSGO/Brain-OS.git
+    
+    # 2. Push the mirror to your new PRIVATE repository
+    cd Brain-OS.git
+    git push --mirror https://github.com/YOUR_USERNAME/My-Brain-OS.git
+    
+    # 3. Clean up
+    cd .. && rm -rf Brain-OS.git
+    ```
+
+3. Clone your new private repository locally:
+    ```bash
+    git clone git@github.com:YOUR_USERNAME/My-Brain-OS.git
+    cd My-Brain-OS
+    ```
+
+4. Link the upstream to receive future updates:
+    ```bash
+    git remote add upstream https://github.com/StenguyzCSGO/Brain-OS.git
+    git remote set-url --push upstream DISABLE
+    ```
+
+    When new features or templates are released, simply run:
+    ```bash
+    git pull upstream main
+    git push origin main
+    ```
 
 ### 2. Open as an Obsidian Vault
 
 * Open Obsidian
 * Select **“Open folder as vault”**
-* Choose the `Brain-OS` directory
+* Choose the `My-Brain-OS` directory
 
 ### 3. Required Obsidian Configuration
 
